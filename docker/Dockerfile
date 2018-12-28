@@ -6,4 +6,6 @@ WORKDIR /archive/node
 RUN npm install
 WORKDIR /archive/node/worker
 
+VOLUME /archive/node/worker
+
 CMD ["node", "index.js"]
